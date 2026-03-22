@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# stdlib showcase
+
+`stdlib showcase` is an interactive browser-based showcase of the [stdlib](https://stdlib.io) project's numerical computing and scientific capabilities. It provides a visual explorer for mathematical functions, statistical distributions, and high-performance linear algebra operations directly in the browser, powered by Next.js.
+
+## Features
+
+- **Statistical Distributions:** Explore Probability Density Functions (PDF) and Cumulative Distribution Functions (CDF) for Normal, Exponential, Beta, Gamma, Chi-squared, and Uniform distributions.
+- **BLAS Operations:** Interactive demonstrations of Level 1 and Level 2 Basic Linear Algebra Subprograms (DGEMV, DAXPY, DDOT, DSCAL, DNRM2).
+- **LAPACK Operations:** Real LAPACK routines demonstrated, allowing for matrix permutations, scaling norms, tridiagonal factorizations, and machine parameters retrieval.
+- **Special Functions:** Visualizations of Gamma, Beta, Bessel J_0/J_1, Error function, Sigmoid, and Sinc functions.
+
+## Tech Stack
+
+- **Next.js** (App Router)
+- **React 19** 
+- **Chart.js** & `react-chartjs-2` for interactive data visualizations
+- **@stdlib**: Scientific computing standard library for JavaScript & Node.js
 
 ## Getting Started
 
-First, run the development server:
+First, ensure you have Node.js installed. Then, clone the repository and install the dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the interactive modules in action.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Deployment Ready
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This application uses the `next build` command to generate static or optimized server production builds, and is specifically structured with a `vercel.json` and customized `next.config.mjs` for seamless deployment to Vercel/similar Node.js environments.
 
-## Learn More
+To deploy simply run:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npx vercel deploy
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*(You can also connect it to Vercel via GitHub, GitLab, or Bitbucket for automatic continuous deployments).*

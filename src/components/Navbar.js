@@ -8,7 +8,7 @@ const navLinks = [
   { href: '/distributions', label: 'Distributions' },
   { href: '/matrix', label: 'BLAS Ops' },
   { href: '/lapack', label: 'LAPACK' },
-  { href: '/special-functions', label: 'Special Functions' },
+  { href: '/random-sampling', label: 'Random Sampling' },
 ];
 
 export default function Navbar() {

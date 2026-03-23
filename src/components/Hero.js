@@ -21,8 +21,7 @@ export default function Hero() {
 
           <p className="hero-subtitle delay-3">
             Interactive demonstrations of stdlib&apos;s numerical computing libraries.
-            Explore statistical distributions, BLAS and LAPACK operations, and special
-            functions — all running in your browser.
+            Explore statistical distributions, BLAS and LAPACK operations, and random sampling — all running in your browser.
           </p>
 
           <div className="hero-actions delay-4">

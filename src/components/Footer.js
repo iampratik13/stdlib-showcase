@@ -22,7 +22,7 @@ export default function Footer() {
             <a href="/distributions">Distributions</a>
             <a href="/matrix">BLAS Ops</a>
             <a href="/lapack">LAPACK</a>
-            <a href="/special-functions">Special Functions</a>
+            <a href="/random-sampling">Random Sampling</a>
           </div>
 
           <div className="footer-links-group">

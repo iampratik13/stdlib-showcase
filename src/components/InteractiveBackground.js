@@ -70,7 +70,6 @@ export default function InteractiveBackground() {
           this.dy = -this.dy;
         }
 
-        // Collision detection with mouse
         if (mouse.x && mouse.y) {
           let dx = mouse.x - this.x;
           let dy = mouse.y - this.y;
@@ -104,7 +103,6 @@ export default function InteractiveBackground() {
         const y = Math.random() * (innerHeight - size * 2) + size;
         const dx = (Math.random() - 0.5) * 1.5;
         const dy = (Math.random() - 0.5) * 1.5;
-        // mixing the stdlib simple colors
         const colors = ['rgba(245, 130, 32, 0.4)', 'rgba(30, 136, 229, 0.4)', 'rgba(142, 142, 169, 0.3)'];
         const color = colors[Math.floor(Math.random() * colors.length)];
         

@@ -54,7 +54,7 @@ const distributions = {
       { key: 'theta', label: 'θ (Scale)', min: 0.5, max: 5, step: 0.5, default: 1 },
     ],
     range: () => ({ min: 0.01, max: 20, step: 0.1 }),
-    pdf: (x, { k, theta }) => gammaPDF(x, k, theta),
+    pdf: (x, { k, theta }) => gammaPDF(x, k, 1/theta),
     cdf: (x, { k, theta }) => gammaCDF(x, k, 1/theta),
     stats: ({ k, theta }) => ({ Mean: (k*theta).toFixed(3), Variance: (k*theta*theta).toFixed(3), 'Std Dev': Math.sqrt(k*theta*theta).toFixed(3), Skewness: (2/Math.sqrt(k)).toFixed(3) }),
   },

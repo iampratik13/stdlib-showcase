@@ -7,6 +7,7 @@ import daxpy_std from '@stdlib/blas-base-daxpy';
 import ddot_std from '@stdlib/blas-base-ddot';
 import dscal_std from '@stdlib/blas-base-dscal';
 import dnrm2_std from '@stdlib/blas-base-dnrm2';
+import dgemv_std from '@stdlib/blas-base-dgemv';
 
 function daxpy(n, alpha, x, y) { 
   const r = new Float64Array(y); 
@@ -24,7 +25,11 @@ function dscal(n, alpha, x) {
 function dnrm2(n, x) { 
   return dnrm2_std(n, x, 1); 
 }
-function dgemv(m, n, alpha, A, x, beta, y) { const r = new Float64Array(m); for (let i = 0; i < m; i++) { let s = 0; for (let j = 0; j < n; j++) s += A[i*n+j]*x[j]; r[i] = alpha*s+beta*y[i]; } return r; }
+function dgemv(m, n, alpha, A, x, beta, y) {
+  const r = new Float64Array(y);
+  dgemv_std('row-major', 'no-transpose', m, n, alpha, A, n, x, 1, beta, r, 1);
+  return r;
+}
 
 const operations = [
   { key: 'daxpy', name: 'DAXPY', desc: 'y = αx + y', needsAlpha: true, needsTwo: true },

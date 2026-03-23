@@ -21,9 +21,9 @@ const features = [
     color: 'orange',
   },
   {
-    title: 'Special Functions',
-    description: 'Visualize Gamma, Beta, Bessel J₀/J₁, Error function, Sigmoid, and Sinc — all computed by @stdlib/math-base-special.',
-    href: '/special-functions',
+    title: 'Random Sampling',
+    description: 'Generate samples with stdlib PRNGs (randu, randn, minstd, minstd-shuffle) and compare empirical histograms against theoretical PDFs.',
+    href: '/random-sampling',
     color: 'blue',
   },
 ];

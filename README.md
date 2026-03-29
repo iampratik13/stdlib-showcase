@@ -1,6 +1,6 @@
-# stdlib showcase
+# stdlib numerica
 
-`stdlib showcase` is an interactive browser-based showcase of the [stdlib](https://stdlib.io) project's numerical computing and scientific capabilities. It provides a visual explorer for mathematical functions, statistical distributions, and high-performance linear algebra operations directly in the browser, powered by Next.js.
+`stdlib numerica` is an interactive browser-based platform for exploring the [stdlib](https://stdlib.io) project's numerical computing and scientific capabilities. It provides a visual explorer for mathematical functions, statistical distributions, and high-performance linear algebra operations directly in the browser, powered by Next.js.
 
 ## Features
 

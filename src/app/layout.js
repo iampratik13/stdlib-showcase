@@ -3,11 +3,11 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  title: 'stdlib Scientific Computing Showcase',
-  description: 'Interactive demonstrations of stdlib\'s powerful scientific computing libraries — statistical distributions, matrix operations, special functions, signal processing, and more.',
+  title: 'stdlib numerica',
+  description: 'Interactive browser-based platform for exploring stdlib\'s powerful scientific computing libraries — statistical distributions, matrix operations, special functions, signal processing, and more.',
   keywords: ['stdlib', 'scientific computing', 'JavaScript', 'numerical analysis', 'GSoC', 'LAPACK', 'BLAS'],
   openGraph: {
-    title: 'stdlib Scientific Computing Showcase',
+    title: 'stdlib numerica',
     description: 'Explore the power of stdlib\'s numerical computing libraries through interactive visualizations.',
     type: 'website',
   },
